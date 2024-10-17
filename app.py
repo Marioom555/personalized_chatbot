@@ -1,4 +1,10 @@
+
 # Bring in deps
+import streamlit as st
+
+# Install missing dependencies
+if not st._is_running_with_streamlit:
+    !pip install langchain
 import os 
 from apikey import apikey 
 
